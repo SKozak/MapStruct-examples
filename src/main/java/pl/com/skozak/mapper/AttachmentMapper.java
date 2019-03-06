@@ -1,7 +1,9 @@
-package pl.com.skozak;
+package pl.com.skozak.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import pl.com.skozak.model.entity.Attachment;
+import pl.com.skozak.model.dto.AttachmentDTO;
 
 import java.util.List;
 import java.util.Set;

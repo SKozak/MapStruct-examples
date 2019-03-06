@@ -1,10 +1,11 @@
-package pl.com.skozak;
+package pl.com.skozak.mapper;
 
 
-import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 import org.mapstruct.ValueMapping;
+import pl.com.skozak.model.AgreementStatus;
+import pl.com.skozak.model.ExternalAgreementStatus;
 
 
 @Mapper(componentModel = "spring")

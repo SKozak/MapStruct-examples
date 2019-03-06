@@ -1,4 +1,4 @@
-package pl.com.skozak;
+package pl.com.skozak.mapper;
 
 
 import org.mapstruct.AfterMapping;
@@ -9,6 +9,12 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 import org.springframework.beans.factory.annotation.Autowired;
+import pl.com.skozak.model.entity.Agreement;
+import pl.com.skozak.model.dto.AgreementDTO;
+import pl.com.skozak.service.AgreementService;
+import pl.com.skozak.annotation.IncludeAfterMapping;
+import pl.com.skozak.annotation.IncludeBeforeMapping;
+import pl.com.skozak.annotation.ProductWithoutDescription;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -28,7 +34,7 @@ public abstract class AgreementMapper {
     @Mapping(target = "attachments", source = "attachmentsDTO")
     @Mapping(ignore = true, target = "anex")
     @BeanMapping(qualifiedBy = {IncludeBeforeMapping.class})
-    abstract Agreement mapToAgreement(AgreementDTO agreementDTO);
+    public abstract Agreement mapToAgreement(AgreementDTO agreementDTO);
 
 
     @Mapping(ignore = true, target = "anex")

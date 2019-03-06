@@ -1,6 +1,7 @@
-package pl.com.skozak;
+package pl.com.skozak.model.entity;
 
 import lombok.Data;
+import pl.com.skozak.model.AgreementStatus;
 
 import java.time.LocalDate;
 import java.util.Set;

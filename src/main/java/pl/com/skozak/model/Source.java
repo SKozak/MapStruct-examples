@@ -1,4 +1,4 @@
-package pl.com.skozak;
+package pl.com.skozak.model;
 
 import lombok.Data;
 
